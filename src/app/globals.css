@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 
-:root {
+ :root {
   --bg: white;
   --textColor: black;
   --softBg: #f0f0f0;
@@ -14,14 +14,9 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 100vw;
+html, body {
+  width: 100%;
   overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .dark {
@@ -38,18 +33,10 @@ a {
   --softTextColor: #626262;
 }
 
-.container {
-  min-height: 100vh;
-  background-color: var(--bg);
-  color: var(--textColor);
-}
 
-.wrapper {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 80px;
-  padding-right: 80px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1536px) {
@@ -86,4 +73,4 @@ a {
 
 .quill > .ql-container > .ql-editor.ql-blank::before{
   color: #b3b3b1;
-}
+} 

@@ -1,11 +1,17 @@
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
+import CardList from "@/components/cardList/CardList";
+import CategoryList from "@/components/categoryList/CategoryList";
+import Featured from "@/components/featured/Featured";
+import Menu from "@/components/menu/Menu";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Footer />
+      <Featured />
+      <CategoryList />
+      <div>
+        <CardList />
+        <Menu />
+      </div>
     </div>
   );
 }
